@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Header from './compunent/haeder/Header'
 import Footer from './compunent/footer/Footer'
+import Search from './compunent/search/Search'
 
 function App() {
 
@@ -9,7 +10,13 @@ function App() {
       className='w-full'
     >
       <Header />
-      <Outlet />
+      <div
+        className='px-5'
+      >
+
+        <Search />
+        <Outlet />
+      </div>
       <Footer />
     </div>
   )
